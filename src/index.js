@@ -28,4 +28,6 @@ const App = () => {
 	);
 };
 
+//comment
+
 ReactDOM.render(<App />, document.getElementById('root'));
