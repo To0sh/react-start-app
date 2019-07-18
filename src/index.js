@@ -1,22 +1,10 @@
+//libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const ToDoList = () => {
-	return (
-		<ul>
-			<li>Learn React</li>
-			<li>Build App</li>
-		</ul>
-	);
-};
-
-const AppHeader = () => {
-	return <h1>My ToDo List</h1>;
-};
-
-const SerchPanel = () => {
-	return <input placeholder="search" />;
-}
+//components
+import AppHeader from './components/app-header';
+import SerchPanel from './components/search-panel';
+import ToDoList from './components/todo-list';
 
 const App = () => {
 	return (
@@ -27,7 +15,5 @@ const App = () => {
 		</div>
 	);
 };
-
-//comment
 
 ReactDOM.render(<App />, document.getElementById('root'));
