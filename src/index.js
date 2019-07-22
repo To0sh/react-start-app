@@ -7,11 +7,18 @@ import SerchPanel from './components/search-panel';
 import ToDoList from './components/todo-list';
 
 const App = () => {
+
+	const todoData = [
+		{label : 'Drink Coffee', important: false},
+		{label: 'Make App', important: true},
+		{label: 'Have A Lunch', important: false}
+	];
+
 	return (
 		<div>
 			<AppHeader />
 			<SerchPanel />
-			<ToDoList />
+			<ToDoList todos={todoData}/>
 		</div>
 	);
 };
