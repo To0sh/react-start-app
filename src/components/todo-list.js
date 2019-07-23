@@ -1,5 +1,7 @@
 import React from 'react';
+
 import ToDoListItem from './todo-list-item';
+import './todo-list.css';
 
 const ToDoList = ({ todos }) => {
 
@@ -8,14 +10,14 @@ const ToDoList = ({ todos }) => {
 		const { id, ...itemProps } = item;
 
 		return ( 
-			<li key={item.id}>
+			<li key={item.id} className="list-group-item">
 				<ToDoListItem {...itemProps} />
 			</li> 
 		);
 	});
 
 	return (
-		<ul>
+		<ul className="list-group todo-list">
 			{ elements }
 		</ul>
 	);
